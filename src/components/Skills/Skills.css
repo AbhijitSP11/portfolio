@@ -1,0 +1,16 @@
+.skills-container > :nth-child(1) {
+  margin-top: 2rem;
+  margin-left: 2rem;
+  display: flex;
+  gap: 2rem;
+}
+.skills-container > :nth-child(2) {
+  margin-top: 2rem;
+  margin-left: 5rem;
+  display: flex;
+  gap: 2rem;
+}
+.skills-container > * {
+  width: 40px;
+  height: 40px;
+}

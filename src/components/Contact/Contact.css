@@ -1,0 +1,65 @@
+.contact-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: center;
+}
+.header {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  align-items: center;
+}
+.header > :nth-child(1) {
+  color: white;
+  font-weight: bold;
+  font-size: 3rem;
+  text-align: center;
+}
+.header > :nth-child(2) {
+  color: white;
+  font-size: 16px;
+  margin-top: 2rem;
+}
+.header > :nth-child(3) {
+  color: white;
+  font-weight: 100;
+  font-size: 16px;
+}
+.header > :nth-child(4) {
+  font-weight: 400;
+  font-size: 16px;
+  color: #657aff;
+}
+.header > :nth-child(5) {
+  font-weight: bold;
+  font-size: 16px;
+  color: #657aff;
+}
+.flex-container {
+  display: flex;
+  gap: 1rem;
+}
+.contact-form {
+  margin-top: 2rem;
+  background: #22284a;
+  border-radius: 8px;
+  border: none;
+  height: 40px;
+  width: 250px;
+  border: 2px solid #657aff;
+}
+.contact-form-msg {
+  margin-top: 1rem;
+  background: #22284a;
+  border-radius: 8px;
+  border: none;
+  height: 200px;
+  width: 520px;
+  border: 2px solid #657aff;
+}
+.btn-submit {
+  margin-top: 20px;
+  text-align: center;
+  width: 250px;
+}

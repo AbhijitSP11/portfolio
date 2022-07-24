@@ -1,0 +1,23 @@
+.social-container {
+  display: flex;
+  margin-top: 14rem;
+  margin-left: -1rem;
+  margin-left: 3.5rem;
+}
+.s-icons > * {
+  display: flex;
+  flex-direction: column;
+  color: rgba(255, 255, 255, 0.774);
+  padding: 0.6rem;
+}
+.s-icons > * :hover {
+  cursor: pointer;
+  color: #7167ff;
+}
+.hl {
+  border-left: 2px solid #655affa1;
+  height: 132px;
+  display: flex;
+  margin-left: 16px;
+  margin-top: 0.5rem;
+}

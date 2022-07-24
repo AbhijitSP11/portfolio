@@ -1,0 +1,54 @@
+.about-container {
+  display: flex;
+  height: 77vh;
+  margin-right: 50px;
+  margin-left: 150px;
+  margin-top: 0rem;
+}
+.about-intro {
+  display: flex;
+  position: relative;
+  flex: 1;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.about-text {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+.about-text > :nth-child(1) {
+  color: white;
+  font-weight: bold;
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.text > :nth-child(2) {
+  color: white;
+  font-weight: 100;
+  font-size: 16px;
+  margin-top: 20px;
+}
+
+.about-image {
+  flex: 1;
+  position: relative;
+}
+.about-image > * {
+  position: absolute;
+  z-index: 1;
+}
+.about-image > :nth-child(1) {
+  transform: scale(0.67);
+  left: -3rem;
+  top: -8.6rem;
+  width: 640px;
+  height: 680px;
+}
+.about-image > :nth-child(2) {
+  transform: scale(0.69);
+  left: -15;
+  top: -9%;
+}
