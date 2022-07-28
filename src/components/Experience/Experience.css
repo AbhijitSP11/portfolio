@@ -1,6 +1,6 @@
 .ex-container {
-  height: 77vh;
-  margin-top: 8rem;
+  height: 60vh;
+  margin-top: 6rem;
   margin-left: 380px;
 }
 
@@ -50,4 +50,39 @@
   cursor: pointer;
   background-color: #656aff1d;
   color: #655aff;
+}
+
+@media screen and (max-width: 480px) {
+  .ex-container {
+    margin-top: 20rem;
+    margin-left: 6rem;
+  }
+  .ex-container > span {
+    margin-left: -2.4rem;
+  }
+  .vl {
+    border: 2px solid #655aff50;
+    height: 0px;
+    margin-top: 4rem;
+  }
+  .experience__list {
+    display: flex;
+    flex-direction: row;
+    margin-left: -5rem;
+  }
+  .btn {
+    border: 2px;
+    color: rgb(192, 192, 192);
+    font-size: 16px;
+    background-color: transparent;
+    width: 170px;
+    height: 60px;
+  }
+  .scroll {
+    padding: 4px;
+    width: 115%;
+    overflow-x: auto;
+    overflow-y: hidden;
+    white-space: nowrap;
+  }
 }

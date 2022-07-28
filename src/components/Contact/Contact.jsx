@@ -32,38 +32,42 @@ function Contact() {
     <div className="contact-container" id="Contact">
       <div className="header">
         <span>Get in Touch</span>
-        <span>Have a question</span>
-        <span>I am here to help you</span>
-        <span>Email me at</span>
-        <span>abhijit.panchal2406@gmail.com</span>
       </div>
-      <form ref={form} onSubmit={sendEmail}>
-        <div className="flex-container">
-          <input
-            type="text"
-            name="user_name"
-            placeholder="Name"
-            className="contact-form"
-            style={{ color: "white" }}
-          />
-          <input
-            type="email"
-            name="user_email"
-            placeholder="Email"
-            className="contact-form"
-          />
+      <div className="partition">
+        <div className="span-component">
+          <span>Have a question</span>
+          <span>I am here to help you</span>
+          <span>Email me at</span>
+          <span>abhijit.panchal2406@gmail.com</span>
         </div>
-        <div className="message">
-          <textarea
-            name="message"
-            placeholder="Message"
-            className="contact-form-msg"
-            style={{ color: "white" }}
-          />
-        </div>
-        <input type="submit" value="Submit" className="button btn-submit" />
-        <span>{done && "Thanks for contacting me!"}</span>
-      </form>
+        <form className="form-horizontal" ref={form} onSubmit={sendEmail}>
+          <div className="flex-container">
+            <input
+              type="text"
+              name="user_name"
+              placeholder="Name"
+              className="contact-form"
+              style={{ color: "white" }}
+            />
+            <input
+              type="email"
+              name="user_email"
+              placeholder="Email"
+              className="contact-form"
+            />
+          </div>
+          <div className="message">
+            <textarea
+              name="message"
+              placeholder="Message"
+              className="contact-form-msg"
+              style={{ color: "white" }}
+            />
+          </div>
+          <input type="submit" value="Submit" className="button btn-submit" />
+          <span>{done && "Thanks for contacting me!"}</span>
+        </form>
+      </div>
     </div>
   );
 }

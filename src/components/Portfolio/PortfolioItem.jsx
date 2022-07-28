@@ -3,11 +3,18 @@ import "./PortfolioItem.css";
 
 import { FiExternalLink } from "react-icons/fi";
 import { GoMarkGithub } from "react-icons/go";
+import { motion } from "framer-motion";
 
 function PortfolioItem(props) {
   const { title, image } = props.item;
   return (
-    <div className="portfolio-container">
+    <motion.div
+      whileHover={{
+        marginTop: "-1rem",
+        fontColor: "#655aff",
+      }}
+      className="portfolio-container"
+    >
       <div className="portfolio-header">
         <span>{title}</span>
         <div className="portfolio__links">
@@ -22,7 +29,7 @@ function PortfolioItem(props) {
       <div className="portfolio__img">
         <img src={image} alt="" />
       </div>
-    </div>
+    </motion.div>
   );
 }
 

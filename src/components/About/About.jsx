@@ -34,10 +34,6 @@ function About() {
         </div>
         <Skills />
       </div>
-      <div className="about-image">
-        <img src={bg} alt="" />
-        <img src={bitmoji} alt="" />
-      </div>
     </div>
   );
 }

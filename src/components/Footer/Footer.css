@@ -1,0 +1,29 @@
+.footer-container {
+  margin-top: 8rem;
+}
+.footer-icons {
+  display: flex;
+  display: none;
+  justify-content: space-around;
+}
+.footer-icons > * {
+  color: rgba(255, 255, 255, 0.774);
+  padding: 0.6rem;
+}
+.footer-icons > * :hover {
+  color: #655aff;
+}
+.footer-container > h5 {
+  font-weight: lighter;
+  text-align: center;
+}
+
+@media screen and (max-width: 480px) {
+  .footer-container {
+    width: 80%;
+    margin-left: 2rem;
+  }
+  .footer-icons {
+    display: flex;
+  }
+}

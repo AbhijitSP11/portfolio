@@ -22,3 +22,38 @@
   width: 60%;
   margin-left: 2rem;
 }
+
+@media screen and (max-width: 480px) {
+  .experience__item {
+    box-sizing: border-box;
+    background: rebeccapurple;
+    margin-top: 5rem;
+    display: flex;
+    flex-direction: column;
+    padding: 4px;
+    width: 100%;
+  }
+  .experience__item > span:nth-child(1) {
+    font-size: 18px;
+    font-weight: bold;
+    color: #655affd7;
+    margin-left: 1rem;
+  }
+  .experience__item > span:nth-child(2) {
+    font-size: 16px;
+    font-weight: bold;
+    color: rgba(205, 205, 205, 0.859);
+    margin-left: 1rem;
+  }
+  .duration {
+    margin-top: 0.5rem;
+    margin-left: 1rem;
+  }
+
+  .responsibility {
+    margin-top: 1.5rem;
+    box-sizing: border-box;
+    width: 100%;
+    margin-left: 1rem;
+  }
+}

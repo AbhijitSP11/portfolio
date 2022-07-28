@@ -6,6 +6,7 @@ import Hero from "./components/Hero/Hero";
 import Navbar from "./components/Navbar/Navbar";
 import Portfolio from "./components/Portfolio/Portfolio";
 import Projects from "./components/Projectz/Projects";
+import Footer from "./components/Footer/Footer";
 
 import { motion, useScroll, useSpring } from "framer-motion";
 
@@ -27,6 +28,7 @@ function App() {
       <Projects />
       <Portfolio />
       <Contact />
+      <Footer />
     </div>
   );
 }

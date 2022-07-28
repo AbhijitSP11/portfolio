@@ -3,6 +3,8 @@
   margin-top: 14rem;
   margin-left: -1rem;
   margin-left: 3.5rem;
+  position: fixed;
+  width: 3rem;
 }
 .s-icons > * {
   display: flex;
@@ -20,4 +22,13 @@
   display: flex;
   margin-left: 16px;
   margin-top: 0.5rem;
+}
+a:hover {
+  margin: -2px;
+  transition-duration: 0.5s;
+}
+@media screen and (max-width: 1280px) {
+  .social-container {
+    display: none !important;
+  }
 }

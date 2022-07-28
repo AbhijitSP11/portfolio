@@ -36,7 +36,6 @@
 .grids {
   margin-top: 30px;
   display: flex;
-
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -52,4 +51,15 @@
   box-sizing: border-box;
   column-gap: 20px;
   row-gap: 20px;
+}
+
+@media screen and (max-width: 1280px) {
+  .grid_container_1 {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media screen and (max-width: 480px) {
+  .grid_container_1 {
+    grid-template-columns: 1fr;
+  }
 }

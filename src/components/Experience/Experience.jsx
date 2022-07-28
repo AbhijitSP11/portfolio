@@ -20,7 +20,7 @@ function Experience() {
       <span>Experience</span>
       <div className="experience__item__container">
         <div className="vl"></div>
-        <div className="experience__list">
+        <div className="experience__list scroll">
           <button
             className="btn btn-1"
             onClick={handleOnClick.bind(this, "Design Therapist")}

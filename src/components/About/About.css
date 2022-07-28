@@ -1,16 +1,12 @@
 .about-container {
   display: flex;
-  height: 77vh;
-  margin-right: 50px;
-  margin-left: 150px;
-  margin-top: 0rem;
+  height: 60vh;
+  margin-left: 16rem;
+  width: 100%;
 }
 .about-intro {
   display: flex;
-  position: relative;
-  flex: 1;
-  flex-direction: column;
-  gap: 2rem;
+  gap: 6rem;
 }
 
 .about-text {
@@ -25,11 +21,18 @@
   margin-bottom: 20px;
 }
 
-.text > :nth-child(2) {
+.about-text > :nth-child(2) {
   color: white;
   font-weight: 100;
   font-size: 16px;
-  margin-top: 20px;
+  margin-top: 16px;
+  letter-spacing: 0.1rem;
+}
+.about-text > :nth-child(3) {
+  color: white;
+  font-size: 16px;
+  margin-top: 16px;
+  letter-spacing: 0.1rem;
 }
 
 .about-image {
@@ -51,4 +54,32 @@
   transform: scale(0.69);
   left: -15;
   top: -9%;
+}
+
+@media screen and (min-width: 320px) and (max-width: 480px) {
+  .about-container {
+    margin: 2rem;
+    width: 80%;
+  }
+  .about-intro {
+    display: flex;
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 1280px) {
+  .about-container {
+    margin-left: 4rem;
+    width: 100%;
+  }
+  .about-intro {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  .about-text > :nth-child(1) {
+    color: white;
+    font-weight: bold;
+    font-size: 3rem;
+    margin-bottom: 20px;
+  }
 }

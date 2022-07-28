@@ -1,37 +1,52 @@
 .contact-container {
+  width: 100%;
   display: flex;
   flex-direction: column;
   gap: 2rem;
+  margin-bottom: 4rem;
   align-items: center;
 }
+
 .header {
-  display: flex;
-  flex-direction: column;
-  gap: 0.25rem;
-  align-items: center;
-}
-.header > :nth-child(1) {
   color: white;
   font-weight: bold;
   font-size: 3rem;
+  margin-bottom: 2rem;
   text-align: center;
 }
-.header > :nth-child(2) {
+
+.partition {
+  display: flex;
+  box-sizing: border-box;
+  gap: 6rem;
+  width: 70%;
+}
+
+.span-component {
+  display: flex;
+  box-sizing: border-box;
+  flex-direction: column;
+  background: #14193f;
+  height: 50%;
+  padding: 1.5rem;
+  border-width: 0px 0px 2px;
+  border-style: solid;
+  border-color: #657aff;
+}
+.span-component > :nth-child(1) {
   color: white;
   font-size: 16px;
-  margin-top: 2rem;
 }
-.header > :nth-child(3) {
+.span-component > :nth-child(2) {
   color: white;
   font-weight: 100;
   font-size: 16px;
 }
-.header > :nth-child(4) {
-  font-weight: 400;
+.span-component > :nth-child(3) {
   font-size: 16px;
-  color: #657aff;
+  margin-top: 0.5rem;
 }
-.header > :nth-child(5) {
+.span-component > :nth-child(4) {
   font-weight: bold;
   font-size: 16px;
   color: #657aff;
@@ -40,26 +55,78 @@
   display: flex;
   gap: 1rem;
 }
+.form-horizontal {
+  width: 100%;
+}
 .contact-form {
-  margin-top: 2rem;
   background: #22284a;
-  border-radius: 8px;
+  border-radius: 4px;
   border: none;
   height: 40px;
-  width: 250px;
+  width: 100%;
   border: 2px solid #657aff;
 }
 .contact-form-msg {
   margin-top: 1rem;
   background: #22284a;
-  border-radius: 8px;
+  border-radius: 4px;
   border: none;
   height: 200px;
-  width: 520px;
+  width: 100%;
   border: 2px solid #657aff;
 }
 .btn-submit {
   margin-top: 20px;
-  text-align: center;
+  margin-left: 8rem;
   width: 250px;
+}
+
+@media screen and (max-width: 480px) {
+  .partition {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+  }
+  .span-component {
+    width: 100%;
+  }
+  .flex-container {
+    display: flex;
+    flex-direction: column;
+    margin-top: -3rem;
+  }
+  .contact-form {
+    width: 100%;
+  }
+  .contact-form-msg {
+    width: 100%;
+  }
+  .btn-submit {
+    margin-top: 3rem;
+    margin-left: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  .partition {
+    display: flex;
+    width: 80%;
+  }
+  .span-component {
+    width: 100%;
+  }
+  .flex-container {
+    display: flex;
+    flex-direction: column;
+  }
+  .contact-form {
+    width: 100%;
+  }
+  .contact-form-msg {
+    width: 100%;
+  }
+  .btn-submit {
+    margin-top: 3rem;
+    margin-left: 1.5rem;
+  }
 }

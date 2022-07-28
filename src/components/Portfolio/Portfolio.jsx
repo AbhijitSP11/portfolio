@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import PortfolioItem from "./PortfolioItem";
 import portfolioData from "../../data/portfolioData";
 import "./Portfolio.css";
+import { motion } from "framer-motion";
 
 const Portfolio = () => {
   const [filter, setFilter] = useState("Design");
@@ -17,7 +18,7 @@ const Portfolio = () => {
   };
 
   return (
-    <div id="Projects" className="portfolio_items_container">
+    <div className="portfolio_items_container">
       <div>
         <div subtitle="My portfolio" />
         <h4 className="mt-4">Some of my distinguished works</h4>
@@ -31,7 +32,7 @@ const Portfolio = () => {
             } secondary__btn btn-block`}
             onClick={handleOnClick.bind(this, "Design")}
           >
-            Mobile App
+            Development
           </button>
           <button
             className={`${
@@ -39,7 +40,7 @@ const Portfolio = () => {
             } secondary__btn btn-block`}
             onClick={handleOnClick.bind(this, "Development")}
           >
-            Web Design
+            Mobile App
           </button>
         </div>
       </div>

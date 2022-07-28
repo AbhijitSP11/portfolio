@@ -4,7 +4,7 @@ import website from "../../images/ss.png";
 
 function Projects() {
   return (
-    <div className="projects-container">
+    <div id="Projects" className="projects-container">
       <div className="projects-header">
         <span>Projects</span>
       </div>
@@ -13,17 +13,18 @@ function Projects() {
           <img src={website} alt="" />
         </div>
         <div className="project-desc">
-          <span>Description</span>
+          <span style={{ fontSize: "1em" }}>Description</span>
           <br />
-          <span>
+          <br />
+          <span style={{ fontSize: ".9em" }}>
             Lorem Ipsum is simply dummy text of the printing and typesetting
             industry.
           </span>
-          <span>
+          <span style={{ fontSize: ".9em" }}>
             Lorem Ipsum is simply dummy text of the printing and typesetting
             industry. Lorem Ipsum has been the industry's standard dummy text
           </span>
-          <span>
+          <span style={{ fontSize: ".9em" }}>
             Lorem Ipsum is simply dummy text of the printing and typesetting
             industry. Lorem Ipsum has been the industry's standard dummy text
           </span>
@@ -40,8 +41,8 @@ function Projects() {
         </div>
       </div>
 
-      <div className="projects-component">
-        <div className="project-desc">
+      <div className="projects-component-2">
+        <div className="project-desc-2">
           <span>Description</span>
           <br />
           <span>
@@ -56,18 +57,18 @@ function Projects() {
             Lorem Ipsum is simply dummy text of the printing and typesetting
             industry. Lorem Ipsum has been the industry's standard dummy text
           </span>
-          <div className="tech-stack">
+          <div className="tech-stack-2">
             <span>React</span>
             <span>BootStrap</span>
             <span>Music Player</span>
             <span>Spotify API</span>
           </div>
-          <div className="social-link">
+          <div className="social-link-2">
             <span>Github</span>
             <span>Demo</span>
           </div>
         </div>
-        <div className="project-image">
+        <div className="project-image-2">
           <img src={website} alt="" />
         </div>
       </div>

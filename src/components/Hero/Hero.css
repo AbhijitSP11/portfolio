@@ -1,9 +1,10 @@
 .hero-container {
   display: flex;
   height: 77vh;
-  margin-top: 11rem;
+  margin-top: 10rem;
   margin-right: 50px;
   margin-bottom: 20px;
+  width: 100%;
 }
 
 .hero-intro {
@@ -12,7 +13,8 @@
   flex: 1;
   flex-direction: column;
   gap: 2rem;
-  margin-left: -15%;
+  width: 100%;
+  margin-left: 15rem;
 }
 .text {
   display: flex;
@@ -28,24 +30,30 @@
   color: #657aff;
   font-weight: bold;
   font-size: 3rem;
+  margin-top: -2px;
 }
 .text > :nth-child(3) {
-  color: white;
+  color: #6e64fccc;
   font-weight: bold;
   font-size: 3rem;
+  display: flex;
 }
 .text > :nth-child(4) {
   color: white;
   font-weight: 100;
   font-size: 16px;
-  margin-top: 10px;
+  margin-top: 16px;
+  letter-spacing: 0.1rem;
 }
 
 .resume {
-  box-shadow: 1px 11px 39px rgba(92, 114, 255, 0.61);
-  width: 8rem;
+  box-shadow: 1px 11px 39px rgba(92, 114, 255, 0.41);
+  width: 10rem;
   align-items: center;
   margin-top: 2rem;
+}
+.resume:hover {
+  transition: 0.3s;
 }
 
 .hero-image {
@@ -70,9 +78,42 @@
   top: -9%;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (min-width: 320px) and (max-width: 480px) {
+  .hero-container {
+    width: 100%;
+  }
   .hero-intro {
     display: flex;
     flex-direction: column;
+    margin: 1.5rem;
+  }
+  .text > :nth-child(1) {
+    font-size: 2.5rem;
+  }
+  .text > :nth-child(2) {
+    font-size: 2.5rem;
+  }
+  .text > :nth-child(3) {
+    font-size: 2.5rem;
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  .hero-container {
+    width: 100%;
+  }
+  .hero-intro {
+    display: flex;
+    flex-direction: column;
+    margin: 1.5rem;
+  }
+  .text > :nth-child(1) {
+    font-size: 2.5rem;
+  }
+  .text > :nth-child(2) {
+    font-size: 2.5rem;
+  }
+  .text > :nth-child(3) {
+    font-size: 2.5rem;
   }
 }
