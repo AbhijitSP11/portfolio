@@ -13,6 +13,11 @@
   font-size: 3rem;
   margin-bottom: 2rem;
   text-align: center;
+  font-family: AnuratiRegular;
+}
+
+.header::first-letter {
+  color: #657aff;
 }
 
 .partition {

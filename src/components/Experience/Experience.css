@@ -7,6 +7,11 @@
 .ex-container > span {
   font-size: 3rem;
   font-weight: bold;
+  font-family: AnuratiRegular;
+}
+
+.ex-container > span ::first-letter {
+  color: #655aff;
 }
 
 .experience__item__container {

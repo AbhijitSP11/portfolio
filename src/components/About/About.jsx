@@ -8,7 +8,7 @@ function About() {
   return (
     <div className="about-container" id="About">
       <div className="about-intro">
-        <div className="about-text">
+        <div className="about-text ">
           <span> About Me</span>
           <span>
             Lorem Ipsum is simply dummy text of the printing and typesetting

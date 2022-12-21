@@ -3,13 +3,14 @@ import "./Hero.css";
 import Social from "../Social/Social";
 import { BsFillCloudDownloadFill } from "react-icons/bs";
 import Typewriter from "typewriter-effect";
+import "../../fonts/Anurati-Regular.otf";
 
 const Hero = () => {
   return (
     <div className="hero-container" id="Navbar">
       <Social />
       <div className="hero-intro">
-        <div className="text">
+        <div className="text ">
           <span>Hello 👋</span>
           <span>I am Abhijit</span>
           <span>

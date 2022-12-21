@@ -19,6 +19,10 @@
   font-weight: bold;
   font-size: 3rem;
   margin-bottom: 20px;
+  font-family: AnuratiRegular;
+}
+.about-text > :nth-child(1)::first-letter {
+  color: #657aff;
 }
 
 .about-text > :nth-child(2) {
